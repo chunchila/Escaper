@@ -34,6 +34,8 @@ except Exception as e:
 freshStart = True
 
 
+
+
 def inserttosqlrooms(valsarr):
     def sqlconnect(filename='test.db'):
         try:
