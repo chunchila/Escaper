@@ -10,7 +10,7 @@ def gethebrew(hexname):
     return re.sub(r'\\u[0-9a-fA-F]{4}', lambda x: eval('"' + x.group() + '"'), hexname)
 
 
-with open("C:\\Users\\Dirt\\Desktop\\esc.txt", "r") as f:
+with open("esc.txt", "r") as f:
     html = f.read()
 
 txtRooms = html.split("rooms={")
