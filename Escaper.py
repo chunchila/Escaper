@@ -18,6 +18,7 @@ txtDates = html.split("dates={")
 txtCities = html.split("cities={")
 regionsCities = html.split("regions={")
 
+
 roomsFinal = "{" + txtRooms[1].split("}};")[0] + "}}"  # split for json }};
 citiesFinal = "{" + txtCities[1].split("}};")[0] + "}}"  # split for hashtable ]};
 datesFinal = "{" + txtDates[1].split("]};")[0] + "]}"  # split for hashtable ]};
