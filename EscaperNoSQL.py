@@ -94,7 +94,7 @@ post = {
     "name": "Vella"
 }
 post1 = {
-    "_id": ObjectId(),
+    
     "address": {
         "street": "2 Avenue",
         "zipcode": "10075",
@@ -109,9 +109,7 @@ post1 = {
 
 import time
 
-
-
-print (time.time().)
+print(time.time())
 exit(1)
 client = MongoClient('localhost', 27017)
 db = client.test_database
@@ -119,13 +117,12 @@ col = db.restaurants
 
 col.insertMany(arr)
 
-#db.restaurants.ensureIndex( { 'ID': '1' }, { 'unique': 'true', 'dropDups': 'true' } )
+# db.restaurants.ensureIndex( { 'ID': '1' }, { 'unique': 'true', 'dropDups': 'true' } )
 
 for x in range(1):
-    print ("start adding " ,x )
+    print("start adding ", x)
     col.insert(post)
     time.sleep(2)
     col.insert(post)
-
 
 print(db.restaurants.count())
