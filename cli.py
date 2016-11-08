@@ -1,7 +1,7 @@
 from datetime import datetime
 
 nowTime = (datetime.now().strftime('%H:%M'))
-someTime = ('18:45')
+someTime = ('18:15')
 
 s1 = someTime.split(':')
 s2 = nowTime.split(':')
