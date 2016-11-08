@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from datetime import datetime
+import time
 
 arrHours = [["10:00"], ["11:00"], ["12:00"], ["13:00"], ["14:00"], ["15:00"], ["16:00"], ["17:00"], ["18:00"],
             ["19:00"], ["20:00"], ["21:00"], ["22:00"], ["23:00"], ["00:00"], ["10:00"], ["11:00"], ["12:00"],
@@ -107,25 +108,11 @@ post1 = {
     "name": "Vella"
 }
 
-import time
-
-print(time.time())
-exit(1)
-exit(1)
-exit(1)
-exit(1)
-exit(1)
-exit(1)
-exit(1)
-exit(1)
-
-
-
 client = MongoClient('localhost', 27017)
 db = client.test_database
 col = db.restaurants
 
-col.insertMany(arr)
+col.insertMany(post1)
 
 # db.restaurants.ensureIndex( { 'ID': '1' }, { 'unique': 'true', 'dropDups': 'true' } )
 
