@@ -94,7 +94,7 @@ post = {
     "name": "Vella"
 }
 post1 = {
-    
+
     "address": {
         "street": "2 Avenue",
         "zipcode": "10075",
