@@ -153,6 +153,11 @@ if __name__ == "__main__":
 
     inserttosqlrooms(roomsJson)
 
+    from datetime import datetime
+
+    nowTime = (datetime.now().strftime('%H:%M'))
+    nowDate = (datetime.now().strftime('%Y-%m-%d'))
+
     for d in datesArr.keys():
 
         for t in datesArr[d]:
