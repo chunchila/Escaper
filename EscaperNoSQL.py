@@ -94,7 +94,7 @@ post = {
     "name": "Vella"
 }
 post1 = {
-    
+
     "address": {
         "street": "2 Avenue",
         "zipcode": "10075",
@@ -111,6 +111,16 @@ import time
 
 print(time.time())
 exit(1)
+exit(1)
+exit(1)
+exit(1)
+exit(1)
+exit(1)
+exit(1)
+exit(1)
+
+
+
 client = MongoClient('localhost', 27017)
 db = client.test_database
 col = db.restaurants
