@@ -60,11 +60,10 @@ def inserttosqlrooms(valsarr):
                 if 'u0' in str(val):
                     val = gethebrew(val)
 
-                __datenow = str(datetime.datetime.now()).split(" ")[0]
-                __timenow = str(datetime.datetime.now()).split(" ")[1]
-
                 vals = vals + "\"" + val + "\"" + ","
 
+            __datenow = str(datetime.datetime.now()).split(" ")[0]
+            __timenow = str(datetime.datetime.now()).split(" ")[1]
             vals = vals + "\"" + __datenow + "\"" + ","
             vals = vals + "\"" + __timenow + "\"" + ","
 
