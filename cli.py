@@ -1,12 +1,21 @@
 from datetime import datetime
 
-nowTime = (datetime.now().strftime('%H:%M'))
-someTime = ('18:50')
 
-s1 = someTime.split(':')
-s2 = nowTime.split(':')
+def calcDiffMin(time, diff=10):
+    nowTime = (datetime.now().strftime('%H:%M'))
+    someTime = (str(time))
 
-if s1[0] == s2[0]:
-    print(int(s1[1]) - int(s2[1]) <=10)
+    s1 = someTime.split(':')
+    s2 = nowTime.split(':')
 
-    print(nowTime)
+    if s1[0] == s2[0]:
+        if(int(s1[1]) - int(s2[1]) <= diff):
+            return (int(s1[1]) - int(s2[1]))
+        else:
+            return None
+
+
+if (calcDiffMin("20:20",10)):
+    print ('yes')
+else:
+    print('no')
