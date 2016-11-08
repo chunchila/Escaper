@@ -93,13 +93,39 @@ post = {
     "hours": arrHours,
     "name": "Vella"
 }
-import time
-for x in range(10):
-    with MongoClient('localhost', 27017) as client:
-        db = client.test_database
-        col = db.restaurants
-        col.insert(post)
+post1 = {
+    "_id": ObjectId(),
+    "address": {
+        "street": "2 Avenue",
+        "zipcode": "10075",
+        "building": "1480",
+        "coord": [-73.9557413, 40.7720266]
+    },
+    "borough": "Manhattan",
+    "cuisine": "Italian",
+    "hours": arrHours,
+    "name": "Vella"
+}
 
-    for x in col.find():
-        print(x)
-    print(db.restaurants.count())
+import time
+
+
+
+print (time.time().)
+exit(1)
+client = MongoClient('localhost', 27017)
+db = client.test_database
+col = db.restaurants
+
+col.insertMany(arr)
+
+#db.restaurants.ensureIndex( { 'ID': '1' }, { 'unique': 'true', 'dropDups': 'true' } )
+
+for x in range(1):
+    print ("start adding " ,x )
+    col.insert(post)
+    time.sleep(2)
+    col.insert(post)
+
+
+print(db.restaurants.count())
