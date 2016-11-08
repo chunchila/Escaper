@@ -26,6 +26,7 @@ def createRoomsDatabase():
         cur = sqlcursor(con)
         sqldroptable()
         sqlcreatetable()
+        con.execute("VACUUM")
 
 
     except Exception as e:
@@ -62,6 +63,7 @@ def createRoomsDatesDatabase():
         cur = sqlcursor(con)
         sqldroptable()
         sqlcreatetable()
+        con.execute("VACUUM")
 
 
     except Exception as e:
