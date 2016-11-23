@@ -15,7 +15,25 @@ def calcDiffMin(time, diff=10):
             return None
 
 
-if (calcDiffMin("20:20",10)):
+if (1 ):#calcDiffMin("20:20",10)):
     print ('yes')
 else:
     print('no')
+
+
+
+for x in range(10,100):
+    print (x * x +1*2)
+
+
+
+s3 = " moshe is the man "
+
+
+def makeBlank(times):
+    blank =  "*" * times
+    return blank
+
+
+
+print (makeBlank(10 ) + s3.title() + makeBlank(10))
