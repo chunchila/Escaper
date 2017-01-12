@@ -10,6 +10,7 @@ http://www.linkaddurl.com/
 http://www.zhanf.com/
 http://www.desarrolo.com/
 http://www.netwerker.com/
+<<<<<<< HEAD
 http://www.mydirectorylive.com/
 http://www.promatchbusiness.com/
 http://www.esiq.org/
@@ -17,8 +18,8 @@ http://www.clattorney.com/
 http://www.xy-jt.com/
 http://www.pacdec.org/
 http://www.btjournal.com/
-http://www.submitdir.com/
 http://www.nkssnet.net/
+http://www.submitdir.com/
 http://www.root-b.org/
 http://www.d66a.com/
 http://directory.seoexecutive.com/
@@ -3003,3 +3004,6 @@ http://freeprwebdirectory.com/
 http://asialink-eamarnet.com/
 http://fame.ws/
 http://numero-projecta.com/
+=======
+http://www.mydirectorylive.com/
+>>>>>>> origin/master

@@ -12,7 +12,7 @@ def pinger_urllib(host):
     t1 = time.time()
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+        'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
     try:
         req = requests.get(host, headers=headers)
@@ -38,7 +38,6 @@ with open("sitesT.txt") as f:
 URLs = txt.split("\n")
 semaphore = threading.BoundedSemaphore(10)
 for m in URLs:
-
     semaphore.acquire()
     t = threading.Thread(target=task, args=(m,))
     t.start()
