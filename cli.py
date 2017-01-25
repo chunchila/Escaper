@@ -16,6 +16,7 @@ def calcDiffMin(time, diff=10):
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (1 ):#calcDiffMin("20:20",10)):
     print ('yes')
 else:
@@ -39,6 +40,8 @@ def makeBlank(times):
 
 print (makeBlank(10 ) + s3.title() + makeBlank(10))
 =======
+=======
+>>>>>>> origin/master
 if __name__ == "__main__":
     print("im in main ")
 
@@ -53,4 +56,7 @@ if __name__ == "__main__":
         print('yes')
     else:
         print('no')
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
